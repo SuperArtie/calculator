@@ -72,4 +72,13 @@ describe('Calc', function(){
       expect(avg).to.equal(6);
     });
   });
+  describe('.stdev',function(){
+    it('should find the standard deviation of a set of numbers', function(){
+      var numbers = [4, 2, 6, 11, 1, 12];
+      var stdev = Calc.stdev(numbers);
+
+      expect(stdev).to.be.within(4,5);
+    });
+  });
+
 });

@@ -62,5 +62,16 @@ Calc.mean = function(array){
     return sum / array.length;
 };
 
+Calc.stdev = function(array){
+  var diffs= [];
+  var mean = Calc.mean(array);
+  for(var i=0; i<array.length; i++)
+  {
+    array[i] -= mean;
+    diffs.push(Math.pow(array[i], 2));
+  }
+  return Math.sqrt(Calc.mean(diffs));
+};
+
 module.exports = Calc;
 
