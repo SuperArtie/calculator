@@ -1,0 +1,32 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "description": "simple calculator",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha test --recursive -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperArtie/calculator"
+  },
+  "author": "Nathan Vasquez<nathan.superartie@gmail.com>",
+  "contributors":["Liza Carter<lizahcarter@gmail.com>"],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuperArtie/calculator/issues"
+  },
+  "homepage": "https://github.com/SuperArtie/calculator",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "sync-prompt": "^0.4.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^0.4.0",
+    "mocha": "^1.20.1"
+  }
+}
